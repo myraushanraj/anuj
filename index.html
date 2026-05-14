@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Natural Food Global Exports — Premium Indian Spices, Grains & Dry Fruits</title>
+<meta name="description" content="Premium Indian exporter & trader of Whole Spices, Food Grains, and Dry Fruits — supplying to international markets globally." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============== Tokens ============== */
+:root{
+  --green-900:#0e2a1f;
+  --green-800:#13361f;
+  --green-700:#1B4332;
+  --green-600:#245c44;
+  --gold-500:#D4A017;
+  --gold-400:#e3b53a;
+  --gold-300:#f0cc64;
+  --cream:#faf7f0;
+  --paper:#f6f1e7;
+  --ink:#1a1a1a;
+  --ink-2:#3a3a3a;
+  --ink-3:#6b6b6b;
+  --line:#e6dfd1;
+  --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.42 0 0 0 0 0.18 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* ============== Base ============== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.55;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,5.4vw,4.6rem)}
+h2{font-size:clamp(2rem,3.6vw,3rem)}
+h3{font-size:clamp(1.3rem,1.8vw,1.6rem)}
+.eyebrow{
+  font-family:'Inter',sans-serif;font-weight:500;
+  letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;
+  color:var(--gold-500);
+}
+.section{padding:clamp(64px,8vw,120px) 0}
+.container{width:min(1240px,92%);margin:0 auto}
+.center{text-align:center}
+.mt-s{margin-top:14px}.mt-m{margin-top:24px}.mt-l{margin-top:44px}.mt-xl{margin-top:72px}
+
+/* gold divider */
+.divider{display:inline-flex;align-items:center;gap:14px;color:var(--gold-500)}
+.divider::before,.divider::after{content:"";display:block;width:42px;height:1px;background:currentColor;opacity:.6}
+.divider svg{width:14px;height:14px}
+
+/* ============== Buttons ============== */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 26px;font-weight:600;font-size:.92rem;
+  border-radius:2px;letter-spacing:.02em;
+  transition:transform .25s ease,background .25s ease,color .25s ease,box-shadow .25s ease,border-color .25s ease;
+  border:1px solid transparent;
+}
+.btn-gold{background:var(--gold-500);color:var(--green-900)}
+.btn-gold:hover{background:var(--gold-400);transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(212,160,23,.55)}
+.btn-green{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-green:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.btn-wa{background:#25D366;color:#0a2418}
+.btn-wa:hover{background:#1ebd5a;transform:translateY(-2px)}
+.btn-dark{background:var(--green-700);color:#fff}
+.btn-dark:hover{background:var(--green-800);transform:translateY(-2px)}
+.btn-outline-dark{border-color:var(--green-700);color:var(--green-700)}
+.btn-outline-dark:hover{background:var(--green-700);color:#fff}
+.btn-ghost{color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn .ico{width:16px;height:16px;flex:0 0 auto}
+
+/* ============== Header ============== */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:90;
+  padding:18px 0;
+  background:linear-gradient(180deg,rgba(14,42,31,.92),rgba(14,42,31,.7) 70%,rgba(14,42,31,0));
+  transition:background .35s ease,box-shadow .35s ease,padding .35s ease;
+  backdrop-filter:blur(0px);
+}
+.header.scrolled{
+  background:rgba(255,255,255,.96);
+  box-shadow:0 6px 30px -16px rgba(0,0,0,.18);
+  padding:12px 0;
+  backdrop-filter:blur(8px);
+}
+.header-row{display:flex;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff;transition:color .3s}
+.header.scrolled .logo{color:var(--green-700)}
+.logo-mark{
+  width:42px;height:42px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,var(--gold-400),var(--gold-500) 60%,#a87d10);
+  display:grid;place-items:center;color:var(--green-900);
+  box-shadow:0 0 0 1px rgba(212,160,23,.6),0 6px 16px -6px rgba(212,160,23,.5);
+}
+.logo-name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.05rem;line-height:1.1}
+.logo-name small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-400);margin-top:3px}
+
+.nav{display:flex;gap:8px;margin-left:auto;margin-right:auto}
+.nav a{
+  padding:8px 14px;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.85);
+  border-radius:2px;position:relative;letter-spacing:.02em;
+}
+.header.scrolled .nav a{color:var(--ink-2)}
+.nav a::after{
+  content:"";position:absolute;left:14px;right:14px;bottom:4px;height:1px;
+  background:var(--gold-500);transform:scaleX(0);transform-origin:left;transition:transform .3s ease;
+}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
+.nav a.active{color:var(--gold-400)}
+.header.scrolled .nav a.active{color:var(--green-700)}
+
+.header-cta{display:flex;gap:10px}
+.header-cta .btn{padding:10px 18px;font-size:.82rem}
+
+.hamburger{display:none;width:36px;height:36px;flex-direction:column;justify-content:center;gap:5px;align-items:center;margin-left:auto}
+.hamburger span{width:22px;height:2px;background:#fff;transition:.3s}
+.header.scrolled .hamburger span{background:var(--ink)}
+
+/* ============== Hero ============== */
+.hero{
+  position:relative;min-height:100vh;
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(212,160,23,.18), transparent 50%),
+    radial-gradient(ellipse at 90% 90%, rgba(212,160,23,.12), transparent 55%),
+    linear-gradient(180deg,var(--green-900),var(--green-700));
+  color:#fff;
+  display:flex;align-items:center;overflow:hidden;
+  padding-top:90px;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:var(--grain);opacity:.5;mix-blend-mode:overlay;pointer-events:none;
+}
+.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero-eyebrow{color:var(--gold-400);font-size:.78rem;letter-spacing:.36em;text-transform:uppercase;font-weight:500}
+.hero h1{margin-top:18px;color:#fff}
+.hero h1 .gold{color:var(--gold-400);font-style:italic;font-weight:400}
+.hero p.lead{margin-top:22px;font-size:1.08rem;color:rgba(255,255,255,.75);max-width:520px;line-height:1.7}
+.hero .ctas{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{margin-top:46px;display:flex;gap:32px;color:rgba(255,255,255,.6);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;flex-wrap:wrap}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta i{width:6px;height:6px;border-radius:50%;background:var(--gold-400);display:inline-block}
+
+/* Hero visual collage */
+.hero-visual{position:relative;height:560px}
+.hv-card{
+  position:absolute;border-radius:4px;overflow:hidden;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 0 0 1px rgba(212,160,23,.18);
+}
+.hv-card img{width:100%;height:100%;object-fit:cover}
+.hv-1{width:62%;height:75%;top:0;right:0;transform:rotate(2deg)}
+.hv-2{width:48%;height:55%;bottom:0;left:0;transform:rotate(-3deg)}
+.hv-3{
+  width:38%;height:38%;top:40%;left:38%;transform:rotate(6deg);
+  background:linear-gradient(135deg,var(--gold-500),var(--gold-400));
+  display:grid;place-items:center;text-align:center;padding:24px;color:var(--green-900);
+}
+.hv-3 .num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:800;line-height:1}
+.hv-3 .lbl{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;margin-top:6px;font-weight:600}
+.hero-scroll{position:absolute;left:50%;transform:translateX(-50%);bottom:28px;z-index:3;color:rgba(255,255,255,.6);font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px}
+.hero-scroll::after{content:"";width:1px;height:36px;background:linear-gradient(180deg,var(--gold-400),transparent);animation:drop 1.8s ease infinite}
+@keyframes drop{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1)}100%{transform:scaleY(.2);transform-origin:bottom}}
+
+/* Floating particles overlay */
+.particles{position:absolute;inset:0;pointer-events:none;z-index:1}
+.particles span{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--gold-400);opacity:.5;animation:float 12s linear infinite}
+@keyframes float{
+  0%{transform:translateY(100vh) scale(.4);opacity:0}
+  10%{opacity:.6}
+  90%{opacity:.6}
+  100%{transform:translateY(-10vh) scale(1);opacity:0}
+}
+
+/* ============== Trust marquee ============== */
+.trust{
+  background:var(--paper);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.marquee{display:flex;gap:60px;padding:18px 0;white-space:nowrap;animation:scrollM 28s linear infinite;width:max-content}
+.marquee span{display:inline-flex;align-items:center;gap:10px;color:var(--green-700);font-weight:600;font-size:.85rem;letter-spacing:.06em}
+.marquee span::before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--green-700);color:var(--gold-400);font-size:.7rem}
+@keyframes scrollM{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============== Stats ============== */
+.stats{background:var(--green-800);color:#fff;position:relative}
+.stats::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4;pointer-events:none}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;z-index:1}
+.stat{padding:50px 30px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.stat:last-child{border-right:0}
+.stat .num{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,4.2vw,3.6rem);font-weight:700;color:var(--gold-400);line-height:1}
+.stat .lbl{margin-top:10px;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+
+/* ============== Categories ============== */
+.cat-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.cat-head h2{max-width:560px}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cat-card{
+  position:relative;height:480px;overflow:hidden;border-radius:4px;
+  box-shadow:0 14px 40px -20px rgba(0,0,0,.3);
+  cursor:pointer;
+}
+.cat-card img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.cat-card:hover img{transform:scale(1.08)}
+.cat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,30,21,.9));transition:background .4s}
+.cat-card:hover::after{background:linear-gradient(180deg,rgba(11,30,21,.2),rgba(11,30,21,.95))}
+.cat-body{position:absolute;inset:auto 0 0 0;padding:32px;color:#fff;z-index:2}
+.cat-body .num{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-400);font-size:.95rem}
+.cat-body h3{margin-top:6px;font-size:1.7rem;color:#fff}
+.cat-body p{margin-top:8px;color:rgba(255,255,255,.75);font-size:.92rem;max-width:300px}
+.cat-body .reveal{
+  display:inline-flex;align-items:center;gap:8px;margin-top:18px;
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-400);font-weight:600;
+  opacity:0;transform:translateY(8px);transition:.4s ease;
+}
+.cat-card:hover .reveal{opacity:1;transform:translateY(0)}
+.reveal::after{content:"→"}
+
+/* ============== Why us ============== */
+.why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:60px}
+.why-item{background:#fff;padding:46px 32px;display:flex;flex-direction:column;gap:14px;transition:background .3s}
+.why-item:hover{background:var(--paper)}
+.why-ico{
+  width:54px;height:54px;border-radius:50%;
+  background:linear-gradient(135deg,var(--green-700),var(--green-600));
+  color:var(--gold-400);display:grid;place-items:center;
+  box-shadow:0 0 0 6px rgba(27,67,50,.06);
+}
+.why-ico svg{width:24px;height:24px}
+.why-item h3{font-size:1.2rem}
+.why-item p{color:var(--ink-3);font-size:.92rem}
+
+/* ============== Testimonials ============== */
+.testi{background:var(--green-900);color:#fff;position:relative}
+.testi::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.45;pointer-events:none}
+.testi-head{text-align:center;color:#fff;position:relative;z-index:1}
+.testi-head h2{color:#fff}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;position:relative;z-index:1}
+.testi-card{
+  background:rgba(255,255,255,.04);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.08);
+  padding:36px;border-radius:4px;
+  position:relative;
+}
+.testi-card .quot{position:absolute;top:-18px;left:24px;font-family:'Playfair Display',serif;font-size:5rem;color:var(--gold-400);line-height:1;opacity:.6}
+.testi-card .stars{color:var(--gold-400);letter-spacing:2px;font-size:.95rem}
+.testi-card p{margin-top:14px;color:rgba(255,255,255,.85);font-size:1rem;line-height:1.75;font-style:italic}
+.testi-card .who{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between}
+.testi-card .name{font-weight:600}
+.testi-card .country{color:rgba(255,255,255,.6);font-size:.85rem}
+
+/* ============== CTA banner ============== */
+.cta-banner{
+  background:linear-gradient(120deg,var(--green-700) 0%,var(--green-800) 50%,#3a2d10 100%);
+  position:relative;color:#fff;overflow:hidden;
+}
+.cta-banner::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(212,160,23,.3),transparent 60%)}
+.cta-inner{position:relative;display:flex;justify-content:space-between;align-items:center;gap:40px;padding:70px 0;flex-wrap:wrap}
+.cta-inner h2{color:#fff;max-width:640px}
+.cta-inner .ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ============== Footer ============== */
+.footer{background:#0a1e15;color:rgba(255,255,255,.65);padding:80px 0 30px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:50px}
+.footer h4{font-family:'Inter',sans-serif;color:#fff;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;font-weight:600;margin-bottom:22px}
+.footer a{display:block;color:rgba(255,255,255,.65);padding:5px 0;font-size:.92rem;transition:color .2s}
+.footer a:hover{color:var(--gold-400)}
+.footer-brand p{margin-top:20px;font-size:.92rem;line-height:1.7}
+.footer-brand .gst{margin-top:16px;font-family:'Inter',sans-serif;font-size:.78rem;color:rgba(255,255,255,.5);letter-spacing:.06em}
+.footer-bottom{margin-top:60px;padding-top:30px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:.82rem;color:rgba(255,255,255,.4)}
+
+/* ============== Floating ============== */
+.float{
+  position:fixed;right:24px;z-index:80;
+  width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;
+  box-shadow:0 14px 28px -8px rgba(0,0,0,.35);
+  transition:transform .25s ease;
+}
+.float:hover{transform:scale(1.08)}
+.float.wa{background:#25D366;bottom:24px}
+.float.call{background:var(--gold-500);bottom:90px;color:var(--green-900)}
+.float svg{width:24px;height:24px}
+.float.wa::before{
+  content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid #25D366;animation:pulse 2s ease-out infinite;
+}
+@keyframes pulse{0%{transform:scale(.9);opacity:.7}100%{transform:scale(1.7);opacity:0}}
+.top{
+  position:fixed;left:24px;bottom:24px;z-index:80;
+  width:46px;height:46px;border-radius:50%;background:rgba(27,67,50,.92);color:var(--gold-400);
+  display:grid;place-items:center;backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:.3s;
+}
+.top.show{opacity:1;pointer-events:auto}
+.top svg{width:18px;height:18px}
+
+/* ============== Pages ============== */
+.page{display:none}
+.page.active{display:block;animation:fadeIn .5s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Page hero (smaller, for subpages) */
+.page-hero{
+  background:linear-gradient(180deg,var(--green-900),var(--green-700));
+  color:#fff;padding:160px 0 90px;position:relative;overflow:hidden;
+}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4}
+.page-hero .container{position:relative;z-index:1}
+.page-hero .crumb{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-400);font-weight:500}
+.page-hero h1{color:#fff;margin-top:14px;max-width:760px}
+.page-hero p{margin-top:18px;color:rgba(255,255,255,.7);max-width:680px;font-size:1.05rem}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}
+.about-img{height:560px;background:#ddd;border-radius:4px;overflow:hidden;position:relative;box-shadow:0 30px 60px -20px rgba(0,0,0,.25)}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img .badge{
+  position:absolute;bottom:24px;left:24px;
+  background:var(--gold-500);color:var(--green-900);padding:16px 22px;border-radius:2px;
+  font-family:'Playfair Display',serif;font-weight:700;
+}
+.about-img .badge small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:4px}
+.about-text h2{margin-top:18px}
+.about-text p{margin-top:18px;color:var(--ink-2);font-size:1.02rem;line-height:1.8}
+.gst-trust{margin-top:30px;padding:20px 24px;background:var(--paper);border-left:3px solid var(--gold-500);border-radius:2px}
+.gst-trust .lbl{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.gst-trust .val{font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;margin-top:4px;letter-spacing:.04em}
+
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:80px}
+.mv-card{
+  padding:38px;background:#fff;border:1px solid var(--line);
+  border-top:3px solid var(--gold-500);border-radius:2px;
+}
+.mv-card .label{font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-500);font-weight:600}
+.mv-card h3{margin-top:10px;font-size:1.6rem}
+.mv-card p{margin-top:14px;color:var(--ink-2);line-height:1.8}
+
+.certs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.cert{padding:24px;background:#fff;border:1px solid var(--line);text-align:center;border-radius:2px}
+.cert .seal{width:46px;height:46px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,var(--green-700),var(--green-600));color:var(--gold-400);display:grid;place-items:center;font-weight:700;font-size:.72rem;letter-spacing:.04em}
+.cert .name{font-weight:600;font-size:.92rem}
+.cert .meta{font-size:.74rem;color:var(--ink-3);margin-top:4px}
+
+.reach{margin-top:80px;padding:60px;background:var(--green-800);color:#fff;border-radius:4px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;position:relative;overflow:hidden}
+.reach::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4}
+.reach > *{position:relative;z-index:1}
+.reach h2{color:#fff}
+.reach p{margin-top:16px;color:rgba(255,255,255,.75)}
+.country-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.country-pill{padding:8px 14px;border:1px solid rgba(255,255,255,.18);border-radius:40px;font-size:.85rem;display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.04)}
+
+.team{margin-top:80px}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.team-card{background:#fff;border:1px solid var(--line);border-radius:2px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.team-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(0,0,0,.15)}
+.team-img{aspect-ratio:1/1;background:repeating-linear-gradient(45deg,#eee,#eee 10px,#e4e4e4 10px,#e4e4e4 20px);display:grid;place-items:center;color:var(--ink-3);font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
+.team-meta{padding:22px}
+.team-meta .name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem}
+.team-meta .role{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-500);font-weight:600;margin-top:6px}
+.team-meta p{font-size:.9rem;color:var(--ink-3);margin-top:10px}
+
+/* Products */
+.filter-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:50px;padding:6px;background:var(--paper);border-radius:2px;width:max-content}
+.filter-tabs button{padding:10px 22px;font-size:.85rem;font-weight:600;letter-spacing:.08em;color:var(--ink-2);border-radius:2px;transition:.25s}
+.filter-tabs button.active{background:var(--green-700);color:#fff}
+.filter-tabs button:hover:not(.active){background:rgba(27,67,50,.08)}
+
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.prod-card{
+  background:#fff;border:1px solid var(--line);border-radius:2px;overflow:hidden;
+  transition:transform .35s ease,box-shadow .35s ease;display:flex;flex-direction:column;
+}
+.prod-card:hover{transform:translateY(-6px);box-shadow:0 30px 50px -25px rgba(0,0,0,.25)}
+.prod-img{aspect-ratio:4/3;overflow:hidden;position:relative;background:var(--paper)}
+.prod-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.prod-card:hover .prod-img img{transform:scale(1.08)}
+.prod-grade{
+  position:absolute;top:14px;left:14px;
+  background:rgba(27,67,50,.95);color:var(--gold-400);
+  padding:6px 12px;border-radius:2px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
+}
+.prod-body{padding:24px;display:flex;flex-direction:column;flex:1}
+.prod-body h3{font-size:1.2rem}
+.prod-body .cat{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-500);font-weight:600;margin-bottom:6px}
+.prod-body p{margin-top:10px;color:var(--ink-3);font-size:.9rem;flex:1}
+.prod-actions{margin-top:18px;display:flex;gap:8px}
+.prod-actions .btn{padding:10px 14px;font-size:.78rem;flex:1;justify-content:center}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.svc-card{
+  padding:40px;background:#fff;border:1px solid var(--line);border-radius:2px;
+  position:relative;transition:transform .3s,box-shadow .3s;
+  border-left:3px solid var(--gold-500);
+}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 20px 50px -25px rgba(0,0,0,.18)}
+.svc-card .ico-wrap{
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,var(--green-700),var(--green-600));
+  color:var(--gold-400);display:grid;place-items:center;
+}
+.svc-card .ico-wrap svg{width:26px;height:26px}
+.svc-card h3{margin-top:24px;font-size:1.4rem}
+.svc-card p{margin-top:12px;color:var(--ink-3);line-height:1.75}
+
+.timeline{margin-top:90px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.timeline::before{content:"";position:absolute;top:38px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-500) 20%,var(--gold-500) 80%,transparent);z-index:0}
+.tl-step{text-align:center;position:relative;padding:0 12px;z-index:1}
+.tl-step .dot{width:78px;height:78px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;margin:0 auto;font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold-500);font-weight:700;position:relative}
+.tl-step .dot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px dashed rgba(212,160,23,.4)}
+.tl-step h4{margin-top:22px;font-family:'Playfair Display',serif;font-weight:600;font-size:1.1rem}
+.tl-step p{margin-top:8px;color:var(--ink-3);font-size:.86rem}
+
+/* Partners */
+.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
+.partner-card{padding:30px;background:#fff;border:1px solid var(--line);border-radius:2px;display:flex;gap:18px;align-items:flex-start;transition:.3s}
+.partner-card:hover{border-color:var(--gold-500);transform:translateY(-3px)}
+.partner-flag{font-size:2.2rem;line-height:1}
+.partner-card .type{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-500);font-weight:600}
+.partner-card h3{font-size:1.15rem;margin-top:4px}
+.partner-card .loc{font-size:.85rem;color:var(--ink-3);margin-top:6px}
+
+.partner-form{margin-top:80px;padding:60px;background:var(--paper);border-radius:4px;display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:start}
+.partner-form h2{font-size:2.2rem}
+.partner-form .lead{margin-top:14px;color:var(--ink-3);font-size:.95rem;line-height:1.7}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .full{grid-column:1/-1}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.field input,.field textarea,.field select{
+  padding:14px 16px;border:1px solid var(--line);background:#fff;border-radius:2px;
+  font-family:inherit;font-size:.95rem;color:var(--ink);transition:border-color .2s;
+}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--green-700)}
+.field textarea{resize:vertical;min-height:120px}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px}
+.contact-card{background:var(--green-800);color:#fff;padding:46px;border-radius:4px;position:relative;overflow:hidden}
+.contact-card::before{content:"";position:absolute;inset:0;background-image:var(--grain);opacity:.4}
+.contact-card > *{position:relative;z-index:1}
+.contact-card h3{color:#fff;font-size:1.6rem}
+.contact-list{margin-top:30px;display:flex;flex-direction:column;gap:22px}
+.ci{display:flex;gap:14px;align-items:flex-start}
+.ci .ico{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center;color:var(--gold-400);flex:0 0 auto}
+.ci .ico svg{width:16px;height:16px}
+.ci .lbl{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:600}
+.ci .val{margin-top:3px;font-size:.96rem;color:#fff}
+.ci .val a:hover{color:var(--gold-400)}
+.contact-card .ctas{margin-top:30px;display:flex;gap:10px}
+.contact-card .btn{flex:1;justify-content:center}
+
+.contact-form-wrap{background:#fff;border:1px solid var(--line);padding:46px;border-radius:4px}
+.contact-form-wrap h3{font-size:1.6rem}
+.contact-form-wrap .lead{color:var(--ink-3);margin-top:8px;font-size:.95rem}
+
+.map-box{
+  margin-top:60px;height:340px;border-radius:4px;
+  background:
+    radial-gradient(circle at 50% 45%,rgba(212,160,23,.16),transparent 30%),
+    linear-gradient(180deg,#13361f,#0a1e15);
+  display:grid;place-items:center;text-align:center;color:rgba(255,255,255,.7);position:relative;overflow:hidden;
+  border:1px solid rgba(212,160,23,.2);
+}
+.map-box::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(212,160,23,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(212,160,23,.06) 1px,transparent 1px);background-size:40px 40px}
+.map-box .pin{width:46px;height:46px;border-radius:50% 50% 50% 0;background:var(--gold-500);transform:rotate(-45deg);position:relative;z-index:1;box-shadow:0 8px 20px rgba(212,160,23,.5)}
+.map-box .pin::after{content:"";position:absolute;inset:14px;border-radius:50%;background:var(--green-800)}
+.map-box .label{position:relative;z-index:1;margin-top:24px;font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff}
+.map-box .sub{position:relative;z-index:1;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-400);margin-top:6px}
+
+/* ============== Animations ============== */
+.fx{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.fx.in{opacity:1;transform:translateY(0)}
+.fx-d-1{transition-delay:.1s}.fx-d-2{transition-delay:.2s}.fx-d-3{transition-delay:.3s}.fx-d-4{transition-delay:.4s}
+
+/* ============== Responsive ============== */
+@media (max-width:960px){
+  .nav{display:none;position:fixed;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:18px;gap:4px;box-shadow:0 20px 40px rgba(0,0,0,.1);max-height:80vh;overflow:auto}
+  .nav.open{display:flex}
+  .nav a{color:var(--ink-2);padding:12px 16px}
+  .header-cta{display:none}
+  .hamburger{display:flex}
+  .header{background:rgba(14,42,31,.96)}
+  .hero .container{grid-template-columns:1fr;gap:40px}
+  .hero-visual{height:380px;order:-1}
+  .hv-1{width:70%;height:75%}
+  .hv-2{width:55%;height:55%}
+  .hv-3{width:42%;height:42%;left:42%}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat{border-bottom:1px solid rgba(255,255,255,.08)}
+  .stat:nth-child(2){border-right:0}
+  .cat-grid,.testi-grid,.prod-grid,.partner-grid,.team-grid,.certs{grid-template-columns:1fr}
+  .why-grid,.svc-grid,.mv-grid{grid-template-columns:1fr}
+  .about-grid,.reach,.partner-form,.contact-grid{grid-template-columns:1fr;padding:40px}
+  .about-img{height:380px}
+  .timeline{grid-template-columns:1fr 1fr;gap:40px 0}
+  .timeline::before{display:none}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px}
+  .filter-tabs{width:100%;overflow-x:auto}
+  .form{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .hero{padding-top:110px}
+  .footer-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr}
+  .stat{border-right:0}
+  .reach,.partner-form,.contact-card,.contact-form-wrap{padding:30px}
+  .float.wa{right:16px;bottom:16px}.float.call{right:16px;bottom:82px}.top{left:16px;bottom:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============== HEADER ============== -->
+<header class="header" id="header">
+  <div class="container header-row">
+    <a href="#" class="logo" data-nav="home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 7-9 7-9s7 4 7 9a7 7 0 0 1-7 7Z"/><path d="M11 20V8"/></svg>
+      </span>
+      <span class="logo-name">Natural Food<br><small>Global Exports</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#" data-nav="home" class="active">Home</a>
+      <a href="#" data-nav="about">About</a>
+      <a href="#" data-nav="products">Products</a>
+      <a href="#" data-nav="services">Services</a>
+      <a href="#" data-nav="partners">Partners</a>
+      <a href="#" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold" href="tel:+91XXXXXXXXXX">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        Call Now
+      </a>
+      <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.11a9.9 9.9 0 0 0 5.78 1.84h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Zm5.78 14.05c-.24.67-1.41 1.3-1.93 1.34-.49.04-1.11.22-3.75-.78-3.15-1.2-5.16-4.38-5.32-4.59-.16-.21-1.27-1.69-1.27-3.22 0-1.53.8-2.29 1.08-2.6.28-.31.62-.39.83-.39.21 0 .41 0 .59.01.19.01.45-.07.7.53.27.65.91 2.25.99 2.41.08.16.13.34.02.55-.1.21-.16.34-.31.52-.16.18-.33.4-.47.54-.16.16-.33.34-.14.66.18.32.81 1.34 1.74 2.17 1.2 1.07 2.21 1.4 2.53 1.56.32.16.51.13.7-.08.18-.21.81-.94 1.02-1.27.21-.33.42-.27.71-.16.29.11 1.85.87 2.17 1.03.32.16.53.24.61.37.07.13.07.78-.17 1.45Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============== MAIN ============== -->
+<main id="main">
+
+<!-- ====================================================== HOME ====================================================== -->
+<section class="page active" data-page="home">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="particles" aria-hidden="true"></div>
+    <div class="container">
+      <div>
+        <span class="hero-eyebrow">Est. New Delhi · India</span>
+        <h1>Pure from India.<br><span class="gold">Delivered</span> to the world.</h1>
+        <p class="lead">Natural Food Global Exports is a premium supplier of whole spices, food grains, and dry fruits — sourced from India's finest farms and shipped to importers across four continents.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#" data-nav="products">
+            Explore Products
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-green" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.11a9.9 9.9 0 0 0 5.78 1.84h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Z"/></svg>
+            WhatsApp Us
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><i></i> FSSAI · APEDA · ISO 9001</span>
+          <span><i></i> Exporting to 20+ countries</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hv-card hv-1"><img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=900&q=80" alt="Premium Indian spices"></div>
+        <div class="hv-card hv-2"><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700&q=80" alt="Basmati rice grains"></div>
+        <div class="hv-card hv-3">
+          <div>
+            <div class="num">20+</div>
+            <div class="lbl">Countries served</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </div>
+
+  <!-- TRUST MARQUEE -->
+  <div class="trust">
+    <div class="marquee">
+      <span>FSSAI Certified</span><span>APEDA Registered</span><span>ISO 9001</span><span>GST Verified</span><span>Exporting to 20+ Countries</span><span>Lab Tested</span><span>Organic Sourced</span>
+      <span>FSSAI Certified</span><span>APEDA Registered</span><span>ISO 9001</span><span>GST Verified</span><span>Exporting to 20+ Countries</span><span>Lab Tested</span><span>Organic Sourced</span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat fx"><div class="num">500+</div><div class="lbl">Products</div></div>
+        <div class="stat fx fx-d-1"><div class="num">20+</div><div class="lbl">Countries</div></div>
+        <div class="stat fx fx-d-2"><div class="num">10+</div><div class="lbl">Years of trade</div></div>
+        <div class="stat fx fx-d-3"><div class="num">100%</div><div class="lbl">Quality assured</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="container">
+      <div class="cat-head">
+        <div>
+          <span class="eyebrow"><span class="divider"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg></span> &nbsp; Our Catalog</span>
+          <h2 class="mt-s">Three premium categories,<br>shipped worldwide.</h2>
+        </div>
+        <p style="max-width:380px;color:var(--ink-3)">From hand-picked Malabar cardamom to long-grain 1121 Basmati and Kashmir-grown dry fruits — every shipment carries our seal of authenticity.</p>
+      </div>
+      <div class="cat-grid">
+        <a href="#" class="cat-card fx" data-nav="products" data-filter="spices">
+          <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=900&q=80" alt="Whole spices">
+          <div class="cat-body">
+            <div class="num">01 / Catalog</div>
+            <h3>Whole Spices</h3>
+            <p>Cardamom, cumin, black pepper, turmeric, chilli, coriander & more.</p>
+            <span class="reveal">View Products&nbsp;</span>
+          </div>
+        </a>
+        <a href="#" class="cat-card fx fx-d-1" data-nav="products" data-filter="grains">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=900&q=80" alt="Food grains">
+          <div class="cat-body">
+            <div class="num">02 / Catalog</div>
+            <h3>Food Grains</h3>
+            <p>1121 Basmati, IR-64, Sona Masoori, A-grade organic wheat.</p>
+            <span class="reveal">View Products&nbsp;</span>
+          </div>
+        </a>
+        <a href="#" class="cat-card fx fx-d-2" data-nav="products" data-filter="dryfruits">
+          <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=900&q=80" alt="Dry fruits">
+          <div class="cat-body">
+            <div class="num">03 / Catalog</div>
+            <h3>Dry Fruits</h3>
+            <p>Suta Phool Makhana, Afghani figs, W320 cashew, golden raisins.</p>
+            <span class="reveal">View Products&nbsp;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why">
+    <div class="container">
+      <div class="center">
+        <span class="eyebrow">Why Buyers Choose Us</span>
+        <h2 class="mt-s">Standards that travel<br>well across borders.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item fx">
+          <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 7-9 7-9s7 4 7 9a7 7 0 0 1-7 7Z"/></svg></span>
+          <h3>100% Natural</h3>
+          <p>No synthetic additives, no preservatives. Just produce — graded, sealed, and shipped.</p>
+        </div>
+        <div class="why-item fx fx-d-1">
+          <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+          <h3>Global Export</h3>
+          <p>Active trade across USA, UK, UAE, Germany, Australia, Singapore, Canada and beyond.</p>
+        </div>
+        <div class="why-item fx fx-d-2">
+          <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
+          <h3>Bulk Supply</h3>
+          <p>FCL, LCL and bulk container fulfilment. We scale with your distribution demand.</p>
+        </div>
+        <div class="why-item fx">
+          <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m9 14-2 8 5-3 5 3-2-8"/></svg></span>
+          <h3>Premium Grade</h3>
+          <p>AA, A and export grades only. Every lot is graded before container loading.</p>
+        </div>
+        <div class="why-item fx fx-d-1">
+          <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <h3>On-Time Delivery</h3>
+          <p>Documented turnaround. From PO to port — within agreed lead times, every time.</p>
+        </div>
+        <div class="why-item fx fx-d-2">
+          <span class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L5 12v8h14v-8l-4-4V2"/><path d="M9 2h6"/></svg></span>
+          <h3>Lab Tested</h3>
+          <p>Pre-shipment lab certification on moisture, aflatoxin, pesticide & purity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testi">
+    <div class="container">
+      <div class="testi-head">
+        <span class="eyebrow">Buyer Voices</span>
+        <h2 class="mt-s">Trusted by importers,<br>shipment after shipment.</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card fx">
+          <span class="quot">“</span>
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>Excellent cardamom quality, very consistent A-grade. Will reorder.</p>
+          <div class="who"><span class="name">James R.</span><span class="country">🇺🇸 USA</span></div>
+        </div>
+        <div class="testi-card fx fx-d-1">
+          <span class="quot">“</span>
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>Best basmati rice supplier. On-time every shipment.</p>
+          <div class="who"><span class="name">Ahmed K.</span><span class="country">🇦🇪 UAE</span></div>
+        </div>
+        <div class="testi-card fx fx-d-2">
+          <span class="quot">“</span>
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p>Great packaging and communication. Highly recommended.</p>
+          <div class="who"><span class="name">Sophie L.</span><span class="country">🇬🇧 UK</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div>
+        <span class="eyebrow" style="color:var(--gold-400)">Start Your Import</span>
+        <h2 class="mt-s">Ready to import premium Indian<br>food products?</h2>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#" data-nav="contact">Get a Quote</a>
+        <a class="btn btn-green" href="tel:+91XXXXXXXXXX">Call Now</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ====================================================== ABOUT ====================================================== -->
+<section class="page" data-page="about">
+  <div class="page-hero">
+    <div class="container">
+      <div class="crumb">— About Us</div>
+      <h1>Bridging India's finest farms with the world.</h1>
+      <p>A New Delhi-based premium exporter committed to authenticity, traceability and uncompromising quality across every shipment.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img fx">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1000&q=80" alt="Indian spice market">
+          <div class="badge"><small>Established</small>2014 · New Delhi</div>
+        </div>
+        <div class="about-text fx fx-d-1">
+          <span class="eyebrow">Our Story</span>
+          <h2>A decade of premium export.</h2>
+          <p>Natural Food Global Exports is a New Delhi-based premium exporter bridging India's finest farms with global markets. Every product we export carries the promise of purity, authenticity and world-class quality.</p>
+          <p>We work directly with growers in Kerala, Rajasthan, Punjab, Kashmir and Andhra Pradesh — eliminating middle-layers to give importers consistent grades at fair, transparent pricing.</p>
+          <div class="gst-trust">
+            <div class="lbl">GST Identification</div>
+            <div class="val">07XXXXX1234X1ZK</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mv-grid">
+        <div class="mv-card fx">
+          <div class="label">Mission</div>
+          <h3>To make Indian agricultural excellence accessible, everywhere.</h3>
+          <p>We deliver export-grade spices, grains and dry fruits with verified quality, on-time logistics, and packaging that meets every importer's compliance standards.</p>
+        </div>
+        <div class="mv-card fx fx-d-1">
+          <div class="label">Vision</div>
+          <h3>To be the most trusted name in Indian food exports by 2030.</h3>
+          <p>Building enduring partnerships with importers and distributors across continents — anchored in quality, transparency, and shared growth.</p>
+        </div>
+      </div>
+
+      <div class="mt-xl">
+        <span class="eyebrow">Certifications & Compliance</span>
+        <h2 class="mt-s">Audited, certified, and ready to ship.</h2>
+        <div class="certs">
+          <div class="cert fx"><div class="seal">FSSAI</div><div class="name">FSSAI Licensed</div><div class="meta">Food Safety · India</div></div>
+          <div class="cert fx fx-d-1"><div class="seal">APEDA</div><div class="name">APEDA Registered</div><div class="meta">Export Authority</div></div>
+          <div class="cert fx fx-d-2"><div class="seal">ISO</div><div class="name">ISO 9001:2015</div><div class="meta">Quality Management</div></div>
+          <div class="cert fx fx-d-3"><div class="seal">ORG</div><div class="name">Organic Certified</div><div class="meta">Select SKUs</div></div>
+        </div>
+      </div>
+
+      <div class="reach fx">
+        <div>
+          <span class="eyebrow" style="color:var(--gold-400)">Global Reach</span>
+          <h2 class="mt-s">Proudly exporting<br>to 20+ countries.</h2>
+          <p>From Mumbai port to Hamburg, Dubai, New York and Sydney — our containers travel four continents every quarter.</p>
+        </div>
+        <div>
+          <div class="country-list">
+            <span class="country-pill">🇺🇸 USA</span>
+            <span class="country-pill">🇬🇧 United Kingdom</span>
+            <span class="country-pill">🇦🇪 UAE</span>
+            <span class="country-pill">🇩🇪 Germany</span>
+            <span class="country-pill">🇦🇺 Australia</span>
+            <span class="country-pill">🇸🇬 Singapore</span>
+            <span class="country-pill">🇨🇦 Canada</span>
+            <span class="country-pill">🇫🇷 France</span>
+            <span class="country-pill">🇳🇱 Netherlands</span>
+            <span class="country-pill">🇯🇵 Japan</span>
+            <span class="country-pill">🇲🇾 Malaysia</span>
+            <span class="country-pill">🇸🇦 KSA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="team">
+        <div class="center">
+          <span class="eyebrow">Leadership</span>
+          <h2 class="mt-s">A team that knows trade.</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card fx"><div class="team-img">[ Portrait — Founder ]</div><div class="team-meta"><div class="name">Founder & CEO</div><div class="role">Director · Exports</div><p>Twenty years across spice trade, supply chain and global logistics.</p></div></div>
+          <div class="team-card fx fx-d-1"><div class="team-img">[ Portrait — Quality Head ]</div><div class="team-meta"><div class="name">Head of Quality</div><div class="role">Lab · Grading</div><p>Oversees pre-shipment QC, grading and lab certification for every consignment.</p></div></div>
+          <div class="team-card fx fx-d-2"><div class="team-img">[ Portrait — Trade Lead ]</div><div class="team-meta"><div class="name">International Trade</div><div class="role">Buyer Relations</div><p>Manages partnerships across USA, EU, GCC and APAC import markets.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials repeat on About -->
+  <section class="section testi">
+    <div class="container">
+      <div class="testi-head">
+        <span class="eyebrow">Buyer Voices</span>
+        <h2 class="mt-s">Words from our importers.</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card fx"><span class="quot">“</span><div class="stars">★ ★ ★ ★ ★</div><p>Excellent cardamom quality, very consistent A-grade. Will reorder.</p><div class="who"><span class="name">James R.</span><span class="country">🇺🇸 USA</span></div></div>
+        <div class="testi-card fx fx-d-1"><span class="quot">“</span><div class="stars">★ ★ ★ ★ ★</div><p>Best basmati rice supplier. On-time every shipment.</p><div class="who"><span class="name">Ahmed K.</span><span class="country">🇦🇪 UAE</span></div></div>
+        <div class="testi-card fx fx-d-2"><span class="quot">“</span><div class="stars">★ ★ ★ ★ ★</div><p>Great packaging and communication. Highly recommended.</p><div class="who"><span class="name">Sophie L.</span><span class="country">🇬🇧 UK</span></div></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ====================================================== PRODUCTS ====================================================== -->
+<section class="page" data-page="products">
+  <div class="page-hero">
+    <div class="container">
+      <div class="crumb">— Catalog</div>
+      <h1>Premium products,<br>export-grade always.</h1>
+      <p>Hand-picked, graded and certified. Browse by category and request a quote or WhatsApp enquiry for any SKU.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-tabs" id="filters">
+        <button class="active" data-filter="all">All Products</button>
+        <button data-filter="spices">Whole Spices</button>
+        <button data-filter="grains">Food Grains</button>
+        <button data-filter="dryfruits">Dry Fruits</button>
+      </div>
+      <div class="prod-grid" id="prodGrid"><!-- injected by JS --></div>
+    </div>
+  </section>
+</section>
+
+<!-- ====================================================== SERVICES ====================================================== -->
+<section class="page" data-page="services">
+  <div class="page-hero">
+    <div class="container">
+      <div class="crumb">— Services</div>
+      <h1>End-to-end export, handled.</h1>
+      <p>From sample to shipment, private label to cold chain — we run the full export operation so you can focus on selling.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="svc-grid">
+        <div class="svc-card fx">
+          <span class="ico-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 16V8l4-4h6l4 4v8"/><circle cx="12" cy="11" r="2"/></svg></span>
+          <h3>Export Consulting</h3>
+          <p>HS codes, documentation, COO, phytosanitary certificates — we handle the paperwork end-to-end.</p>
+        </div>
+        <div class="svc-card fx fx-d-1">
+          <span class="ico-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/></svg></span>
+          <h3>Bulk Supply</h3>
+          <p>FCL, LCL and large-volume container fulfilment with consistent grade across every shipment.</p>
+        </div>
+        <div class="svc-card fx">
+          <span class="ico-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82Z"/><circle cx="7" cy="7" r="1.5"/></svg></span>
+          <h3>Private Labeling</h3>
+          <p>White-label packaging, custom artwork, and your brand on every pouch, jar or carton.</p>
+        </div>
+        <div class="svc-card fx fx-d-1">
+          <span class="ico-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L5 12v8h14v-8l-4-4V2"/><path d="M9 2h6"/></svg></span>
+          <h3>Quality Testing & Lab</h3>
+          <p>Pre-shipment lab reports on moisture, pesticide residue, aflatoxin, and pathogen testing.</p>
+        </div>
+        <div class="svc-card fx">
+          <span class="ico-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></svg></span>
+          <h3>Cold Chain Logistics</h3>
+          <p>Temperature-controlled containers for moisture-sensitive cargo and high-value spice consignments.</p>
+        </div>
+        <div class="svc-card fx fx-d-1">
+          <span class="ico-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <h3>Global Freight</h3>
+          <p>Sea, air and road logistics with negotiated rates across all major Indian ports and airports.</p>
+        </div>
+      </div>
+
+      <div class="mt-xl center">
+        <span class="eyebrow">How It Works</span>
+        <h2 class="mt-s">Four steps from enquiry to delivery.</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-step fx"><div class="dot">01</div><h4>Enquire</h4><p>Send your SKU list, grades, quantity and destination port.</p></div>
+        <div class="tl-step fx fx-d-1"><div class="dot">02</div><h4>Sample</h4><p>Receive graded samples within 5–7 business days for approval.</p></div>
+        <div class="tl-step fx fx-d-2"><div class="dot">03</div><h4>Confirm Order</h4><p>Lock specs, PI, packaging artwork and shipping terms.</p></div>
+        <div class="tl-step fx fx-d-3"><div class="dot">04</div><h4>Deliver Worldwide</h4><p>Container despatched with full documentation and tracking.</p></div>
+      </div>
+
+      <div class="cta-banner mt-xl" style="border-radius:4px">
+        <div class="container cta-inner">
+          <div>
+            <span class="eyebrow" style="color:var(--gold-400)">Start Today</span>
+            <h2 class="mt-s">Start your export journey<br>with one message.</h2>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+              <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.11a9.9 9.9 0 0 0 5.78 1.84h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Z"/></svg>
+              WhatsApp Us
+            </a>
+            <a class="btn btn-gold" href="#" data-nav="contact">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ====================================================== PARTNERS ====================================================== -->
+<section class="page" data-page="partners">
+  <div class="page-hero">
+    <div class="container">
+      <div class="crumb">— Partners</div>
+      <h1>Trusted by importers,<br>distributors and retail chains.</h1>
+      <p>Across four continents — wholesale buyers, branded retail chains and regional distributors trust us as their India source.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Our Partners</span>
+      <h2 class="mt-s">A network across four continents.</h2>
+      <div class="partner-grid">
+        <div class="partner-card fx"><div class="partner-flag">🇺🇸</div><div><div class="type">Distributor</div><h3>Spice Importer Co.</h3><div class="loc">New Jersey · USA</div></div></div>
+        <div class="partner-card fx fx-d-1"><div class="partner-flag">🇦🇪</div><div><div class="type">Retail Chain</div><h3>Gulf Foods Trading</h3><div class="loc">Dubai · UAE</div></div></div>
+        <div class="partner-card fx fx-d-2"><div class="partner-flag">🇬🇧</div><div><div class="type">Wholesaler</div><h3>London Asian Foods</h3><div class="loc">London · UK</div></div></div>
+        <div class="partner-card fx"><div class="partner-flag">🇩🇪</div><div><div class="type">Importer</div><h3>EuroSpice GmbH</h3><div class="loc">Hamburg · Germany</div></div></div>
+        <div class="partner-card fx fx-d-1"><div class="partner-flag">🇦🇺</div><div><div class="type">Distributor</div><h3>Aussie Indian Foods</h3><div class="loc">Sydney · Australia</div></div></div>
+        <div class="partner-card fx fx-d-2"><div class="partner-flag">🇸🇬</div><div><div class="type">Retail Chain</div><h3>Asia Pantry Pte Ltd</h3><div class="loc">Singapore</div></div></div>
+      </div>
+
+      <div class="mt-xl">
+        <span class="eyebrow">Associations & Certifications</span>
+        <h2 class="mt-s">Audited by the bodies that matter.</h2>
+        <div class="certs">
+          <div class="cert fx"><div class="seal">FSSAI</div><div class="name">FSSAI Licensed</div><div class="meta">Food Safety · India</div></div>
+          <div class="cert fx fx-d-1"><div class="seal">APEDA</div><div class="name">APEDA Registered</div><div class="meta">Export Authority</div></div>
+          <div class="cert fx fx-d-2"><div class="seal">ISO</div><div class="name">ISO 9001:2015</div><div class="meta">Quality Management</div></div>
+          <div class="cert fx fx-d-3"><div class="seal">SIEA</div><div class="name">Spices Board India</div><div class="meta">Member</div></div>
+        </div>
+      </div>
+
+      <div class="partner-form fx">
+        <div>
+          <span class="eyebrow">Become a Partner</span>
+          <h2 class="mt-s">Distribute India's finest in your market.</h2>
+          <p class="lead">Tell us about your business, the markets you serve and the SKUs you're interested in. We'll respond within one business day.</p>
+        </div>
+        <form class="form" onsubmit="event.preventDefault();alert('Thank you! We will contact you within 24 hours.')">
+          <div class="field"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
+          <div class="field"><label>Company</label><input type="text" required placeholder="Company name"></div>
+          <div class="field"><label>Country</label><input type="text" required placeholder="Country"></div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@company.com"></div>
+          <div class="field full"><label>Message</label><textarea placeholder="Tell us about your business and interest..."></textarea></div>
+          <div class="full"><button type="submit" class="btn btn-gold">Submit Application</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ====================================================== CONTACT ====================================================== -->
+<section class="page" data-page="contact">
+  <div class="page-hero">
+    <div class="container">
+      <div class="crumb">— Contact</div>
+      <h1>Let's talk export.</h1>
+      <p>For international bulk enquiries, share your country and required quantity. We respond within 24 hours.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card fx">
+          <span class="eyebrow" style="color:var(--gold-400)">Reach Us</span>
+          <h3 class="mt-s">Natural Food<br>Global Exports</h3>
+          <div class="contact-list">
+            <div class="ci"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="lbl">Address</div><div class="val">New Delhi, India</div></div></div>
+            <div class="ci"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span><div><div class="lbl">Phone</div><div class="val"><a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></div></div></div>
+            <div class="ci"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.11a9.9 9.9 0 0 0 5.78 1.84h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Z"/></svg></span><div><div class="lbl">WhatsApp</div><div class="val"><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">+91-XXXXXXXXXX</a></div></div></div>
+            <div class="ci"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><div><div class="lbl">Email</div><div class="val"><a href="mailto:info@naturalfoodglobalexports.com">info@naturalfoodglobalexports.com</a></div></div></div>
+            <div class="ci"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01M9 17h.01M15 17h.01"/></svg></span><div><div class="lbl">GST No</div><div class="val">07XXXXX1234X1ZK</div></div></div>
+            <div class="ci"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><div class="lbl">Business Hours</div><div class="val">Mon–Sat · 09:30 – 18:30 IST</div></div></div>
+          </div>
+          <div class="ctas">
+            <a class="btn btn-gold" href="tel:+91XXXXXXXXXX">Call Now</a>
+            <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap fx fx-d-1">
+          <span class="eyebrow">Enquiry Form</span>
+          <h3 class="mt-s">Send us your bulk requirement.</h3>
+          <p class="lead">For international bulk enquiries, mention country and quantity. We respond within 24 hours.</p>
+          <form class="form mt-l" onsubmit="event.preventDefault();alert('Thank you! Our export team will respond within 24 hours.')">
+            <div class="field"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
+            <div class="field"><label>Company</label><input type="text" placeholder="Company name"></div>
+            <div class="field"><label>Country</label><input type="text" required placeholder="Country"></div>
+            <div class="field"><label>Email</label><input type="email" required placeholder="you@company.com"></div>
+            <div class="field"><label>Phone</label><input type="tel" placeholder="+1 555 555 5555"></div>
+            <div class="field"><label>Product Interest</label>
+              <select required>
+                <option value="">Select category</option>
+                <option>Whole Spices</option><option>Food Grains</option><option>Dry Fruits</option><option>Multiple Categories</option>
+              </select>
+            </div>
+            <div class="field full"><label>Quantity Required</label><input type="text" placeholder="e.g. 5 MT, 20-ft container"></div>
+            <div class="field full"><label>Message</label><textarea placeholder="Tell us about your requirement..."></textarea></div>
+            <div class="full"><button type="submit" class="btn btn-gold">Send Enquiry</button></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-box fx">
+        <div class="pin"></div>
+        <div class="label">New Delhi, India</div>
+        <div class="sub">Headquarters</div>
+      </div>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff">
+          <span class="logo-mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 7-9 7-9s7 4 7 9a7 7 0 0 1-7 7Z"/><path d="M11 20V8"/></svg></span>
+          <span class="logo-name">Natural Food<br><small>Global Exports</small></span>
+        </div>
+        <p>Premium Indian exporter & trader of Whole Spices, Food Grains, and Dry Fruits — supplying international markets globally.</p>
+        <div class="gst">GST: 07XXXXX1234X1ZK</div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#" data-nav="home">Home</a>
+        <a href="#" data-nav="about">About</a>
+        <a href="#" data-nav="products">Products</a>
+        <a href="#" data-nav="services">Services</a>
+        <a href="#" data-nav="partners">Partners</a>
+        <a href="#" data-nav="contact">Contact</a>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <a href="#" data-nav="products" data-filter="spices">Whole Spices</a>
+        <a href="#" data-nav="products" data-filter="grains">Food Grains</a>
+        <a href="#" data-nav="products" data-filter="dryfruits">Dry Fruits</a>
+        <a href="#" data-nav="services">Private Labeling</a>
+        <a href="#" data-nav="services">Bulk Supply</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a>
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:info@naturalfoodglobalexports.com">info@naturalfoodglobalexports.com</a>
+        <a>New Delhi, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Natural Food Global Exports. All rights reserved.</div>
+      <div>naturalfoodglobalexports.com</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============== FLOATING BUTTONS ============== -->
+<a class="float call" href="tel:+91XXXXXXXXXX" aria-label="Call">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+</a>
+<a class="float wa" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.11a9.9 9.9 0 0 0 5.78 1.84h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2Zm5.78 14.05c-.24.67-1.41 1.3-1.93 1.34-.49.04-1.11.22-3.75-.78-3.15-1.2-5.16-4.38-5.32-4.59-.16-.21-1.27-1.69-1.27-3.22 0-1.53.8-2.29 1.08-2.6.28-.31.62-.39.83-.39.21 0 .41 0 .59.01.19.01.45-.07.7.53.27.65.91 2.25.99 2.41.08.16.13.34.02.55-.1.21-.16.34-.31.52-.16.18-.33.4-.47.54-.16.16-.33.34-.14.66.18.32.81 1.34 1.74 2.17 1.2 1.07 2.21 1.4 2.53 1.56.32.16.51.13.7-.08.18-.21.81-.94 1.02-1.27.21-.33.42-.27.71-.16.29.11 1.85.87 2.17 1.03.32.16.53.24.61.37.07.13.07.78-.17 1.45Z"/></svg>
+</a>
+<button class="top" id="topBtn" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+/* ============== PRODUCTS DATA ============== */
+const PRODUCTS = [
+  // Whole Spices
+  {cat:"spices",name:"8mm A-Grade Green Cardamom",grade:"A Grade",desc:"Hand-picked, 8mm bold capsules with intense aroma — Idukki, Kerala.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"Singapore 99 Cumin Seed",grade:"99% Purity",desc:"Machine-cleaned cumin seed, 99/1 specification — Rajasthan origin.",img:"https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=700&q=80"},
+  {cat:"spices",name:"Europe 99 Cumin Seed",grade:"99% Purity",desc:"EU-compliant cumin with double sortex cleaning, pesticide-tested.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"AA Grade 7mm Green Cardamom",grade:"AA Grade",desc:"Top export grade — 7mm, vibrant green, exceptional shelf life.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"600 GL Whole Organic Black Pepper",grade:"600 GL",desc:"Organic-certified Malabar black pepper, 600 g/L bulk density.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"Turmeric Finger",grade:"Polished",desc:"Erode & Salem origin turmeric fingers — high curcumin content.",img:"https://images.unsplash.com/photo-1615485500704-8e990f9900f1?w=700&q=80"},
+  {cat:"spices",name:"Red Chilli Whole",grade:"Stemless",desc:"Guntur & Teja varieties — vibrant color and bold heat profile.",img:"https://images.unsplash.com/photo-1583946564150-aa5e29e1a52e?w=700&q=80"},
+  {cat:"spices",name:"Coriander Seeds",grade:"Eagle / Scooter",desc:"Round and split varieties — sortex cleaned for export markets.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"Fennel Seeds",grade:"Singapore Quality",desc:"Bold, light-green fennel from Gujarat — sweet and aromatic.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"Star Anise",grade:"Premium",desc:"Whole star anise pods — full bloom, intense fragrance.",img:"https://images.unsplash.com/photo-1556909114-44e3e9399a2e?w=700&q=80"},
+  {cat:"spices",name:"Cloves",grade:"Hand-Picked",desc:"Whole clove with stems — strong essential oil content.",img:"https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=700&q=80"},
+  {cat:"spices",name:"Bay Leaves",grade:"Indian Tej Patta",desc:"Aromatic dried bay leaves — sun-cured for color retention.",img:"https://images.unsplash.com/photo-1615485500704-8e990f9900f1?w=700&q=80"},
+  // Food Grains
+  {cat:"grains",name:"Indian 1121 Basmati Rice",grade:"Sella / Steam",desc:"Extra-long grain Basmati — premium aroma, ideal for export.",img:"https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700&q=80"},
+  {cat:"grains",name:"IR 64 Single Polish Raw Rice",grade:"5% Broken",desc:"Long-grain non-Basmati — high yield, consistent cook quality.",img:"https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=700&q=80"},
+  {cat:"grains",name:"Single Polish Sona Masoori Rice",grade:"AAA",desc:"Light, aromatic Sona Masoori — popular across South Asia & GCC.",img:"https://images.unsplash.com/photo-1586201375761-83865001e31c?w=700&q=80"},
+  {cat:"grains",name:"A-Grade Organic Wheat Grain",grade:"Organic Certified",desc:"Punjab-grown hard wheat — organic-certified, high protein.",img:"https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700&q=80"},
+  // Dry Fruits
+  {cat:"dryfruits",name:"6+ Suta Phool Makhana",grade:"6+ Suta",desc:"Premium puffed fox nut — large, white, crisp lotus seed.",img:"https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=700&q=80"},
+  {cat:"dryfruits",name:"Afghani Whole Dry Figs",grade:"Jumbo",desc:"Premium Afghani anjeer — naturally sweet, soft texture.",img:"https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=700&q=80"},
+  {cat:"dryfruits",name:"Premium Cashew W320",grade:"W320",desc:"Whole white cashew — uniform size, hand-graded.",img:"https://images.unsplash.com/photo-1573049412208-ef89e74d2c43?w=700&q=80"},
+  {cat:"dryfruits",name:"Golden Raisins",grade:"Jumbo",desc:"Long, plump and golden — sun-dried, no added color.",img:"https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=700&q=80"},
+];
+
+/* ============== INIT ============== */
+function renderProducts(filter="all"){
+  const grid=document.getElementById('prodGrid');
+  const items=PRODUCTS.filter(p=>filter==="all"||p.cat===filter);
+  grid.innerHTML=items.map((p,i)=>`
+    <article class="prod-card fx${i%3===1?' fx-d-1':i%3===2?' fx-d-2':''}">
+      <div class="prod-img">
+        <span class="prod-grade">${p.grade}</span>
+        <img src="${p.img}" alt="${p.name}" loading="lazy">
+      </div>
+      <div class="prod-body">
+        <div class="cat">${p.cat==='spices'?'Whole Spices':p.cat==='grains'?'Food Grains':'Dry Fruits'}</div>
+        <h3>${p.name}</h3>
+        <p>${p.desc}</p>
+        <div class="prod-actions">
+          <a class="btn btn-outline-dark" href="#" data-quote="${encodeURIComponent(p.name)}">📋 Get Quote</a>
+          <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent('Hi, I am interested in '+p.name)}" target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+      </div>
+    </article>
+  `).join('');
+  observeFx();
+}
+renderProducts();
+
+/* ============== NAV / ROUTING ============== */
+function go(page,filter){
+  document.querySelectorAll('.page').forEach(s=>s.classList.toggle('active',s.dataset.page===page));
+  document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.dataset.nav===page));
+  if(page==='products'){
+    const f=filter||'all';
+    document.querySelectorAll('#filters button').forEach(b=>b.classList.toggle('active',b.dataset.filter===f));
+    renderProducts(f);
+  }
+  window.scrollTo({top:0,behavior:'instant'});
+  document.getElementById('nav').classList.remove('open');
+}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-nav]');
+  if(t){
+    e.preventDefault();
+    const f=t.dataset.filter;
+    go(t.dataset.nav,f);
+  }
+  const f=e.target.closest('#filters button');
+  if(f){
+    document.querySelectorAll('#filters button').forEach(b=>b.classList.remove('active'));
+    f.classList.add('active');
+    renderProducts(f.dataset.filter);
+  }
+  const q=e.target.closest('[data-quote]');
+  if(q){
+    e.preventDefault();
+    go('contact');
+  }
+});
+
+/* ============== HEADER SCROLL ============== */
+const header=document.getElementById('header');
+const topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',()=>{
+  const s=window.scrollY;
+  header.classList.toggle('scrolled',s>40);
+  topBtn.classList.toggle('show',s>500);
+});
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* ============== HAMBURGER ============== */
+document.getElementById('hamburger').addEventListener('click',()=>{
+  document.getElementById('nav').classList.toggle('open');
+});
+
+/* ============== INTERSECTION OBSERVER FX ============== */
+function observeFx(){
+  const els=document.querySelectorAll('.fx:not(.in)');
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(el=>io.observe(el));
+}
+observeFx();
+
+/* ============== HERO PARTICLES ============== */
+(function(){
+  const p=document.querySelector('.particles');
+  if(!p) return;
+  for(let i=0;i<22;i++){
+    const s=document.createElement('span');
+    s.style.left=(Math.random()*100)+'%';
+    s.style.animationDelay=(-Math.random()*12)+'s';
+    s.style.animationDuration=(8+Math.random()*10)+'s';
+    s.style.width=s.style.height=(2+Math.random()*4)+'px';
+    s.style.opacity=(.2+Math.random()*.5).toFixed(2);
+    p.appendChild(s);
+  }
+})();
+</script>
+</body>
+</html>
