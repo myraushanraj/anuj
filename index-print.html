@@ -540,6 +540,34 @@ h3{font-size:clamp(1.3rem,1.8vw,1.6rem)}
   .reach,.partner-form,.contact-card,.contact-form-wrap{padding:30px}
   .float.wa{right:16px;bottom:16px}.float.call{right:16px;bottom:82px}.top{left:16px;bottom:16px}
 }
+
+.page{display:block !important;animation:none !important}
+.particles, .hero-scroll, .float, .top, .marquee{animation:none !important}
+.fx{opacity:1 !important;transform:none !important;transition:none !important}
+.cat-card img, .prod-img img, .testi-card, .cat-card::after{transform:none !important}
+@page { size: A4 landscape; margin: 0; }
+@media print {
+  html,body{background:#fff}
+  *{ -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  .header, .float, .top, .hero-scroll{ display:none !important; }
+  .page{ break-before: page; page-break-before: always; }
+  .page:first-of-type{ break-before: auto; page-break-before: auto; }
+  .cat-card,.prod-card,.testi-card,.svc-card,.mv-card,.partner-card,.team-card,.cert,.tl-step,
+  .why-item,.stat,.contact-card,.contact-form-wrap,.reach,.partner-form,.cta-banner,
+  .gst-trust,.map-box,.about-img{ break-inside: avoid; page-break-inside: avoid; }
+  h1,h2,h3{ break-after: avoid; page-break-after: avoid; }
+  .hero{ min-height: auto; padding: 80px 0 60px; }
+  .hero-visual{ height: 420px; }
+  .page-hero{ padding: 60px 0 50px; }
+  .section{ padding: 50px 0; }
+  .container{ width: 94%; }
+  .cat-card, .prod-card{ box-shadow:none !important; }
+  .marquee{ animation:none !important; transform:none !important; flex-wrap:wrap; justify-content:center; gap:30px; padding:14px 20px; width:auto !important; }
+  .hero{ break-inside: avoid; page-break-inside: avoid; }
+  .footer{ break-before: page; page-break-before: always; padding:50px 0 30px; }
+  a{ color: inherit; }
+}
+
 </style>
 </head>
 <body>
@@ -1307,5 +1335,18 @@ observeFx();
   }
 })();
 </script>
+
+<script>
+document.querySelectorAll('.page').forEach(p => p.classList.add('active'));
+if (typeof renderProducts === 'function') renderProducts('all');
+document.querySelectorAll('.fx').forEach(el => el.classList.add('in'));
+window.addEventListener('load', async () => {
+  try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch(e){}
+  const imgs = [...document.images];
+  await Promise.all(imgs.map(img => img.complete ? null : new Promise(r => { img.onload = img.onerror = r; })));
+  setTimeout(() => window.print(), 600);
+});
+</script>
+
 </body>
 </html>
