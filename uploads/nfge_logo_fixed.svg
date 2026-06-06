@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380">
+
+  
+
+  
+  <rect x="0" y="0" width="680" height="380" rx="20" fill="#f5f0e8"></rect>
+  <rect x="8" y="8" width="664" height="364" rx="15" fill="none" stroke="#c09b30" stroke-width="1.4"></rect>
+  <rect x="13" y="13" width="654" height="354" rx="12" fill="none" stroke="#c09b30" stroke-width="0.5"></rect>
+
+  
+  <text x="108" y="290" text-anchor="middle" class="serif" font-size="190" font-weight="700" fill="#163d26">N</text>
+  <text x="232" y="290" text-anchor="middle" class="serif" font-size="190" font-weight="700" fill="#163d26">F</text>
+  <text x="448" y="290" text-anchor="middle" class="serif" font-size="190" font-weight="700" fill="#163d26">G</text>
+  <text x="572" y="290" text-anchor="middle" class="serif" font-size="190" font-weight="700" fill="#163d26">E</text>
+
+  
+  <circle cx="340" cy="195" r="118" fill="#f5f0e8" stroke="#c09b30" stroke-width="1.6"></circle>
+  <circle cx="340" cy="195" r="111" fill="none" stroke="#c09b30" stroke-width="0.6"></circle>
+
+  
+  <defs>
+    <path id="topArc" d="M 200,195 A 140,140 0 0,1 480,195"></path>
+    <path id="botArc" d="M 215,218 A 125,125 0 0,0 465,218"></path>
+  </defs>
+
+  
+  <text font-family="Palatino Linotype, Georgia, serif" font-size="11.5" fill="#163d26" letter-spacing="2.8" font-weight="700">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">NATURAL FOOD GLOBAL EXPORT</textPath>
+  </text>
+
+  
+  <text font-family="Palatino Linotype, Georgia, serif" font-size="10" fill="#c09b30" letter-spacing="2.4" font-weight="600">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">EST. 2025  ·  NEW DELHI</textPath>
+  </text>
+
+  
+
+  
+  <ellipse cx="340" cy="186" rx="14" ry="24" fill="#2a6644" stroke="#163d26" stroke-width="0.8"></ellipse>
+  <line x1="340" y1="163" x2="340" y2="210" stroke="#163d26" stroke-width="0.9"></line>
+  <line x1="329" y1="176" x2="351" y2="176" stroke="#163d26" stroke-width="0.6"></line>
+  <line x1="327" y1="187" x2="353" y2="187" stroke="#163d26" stroke-width="0.6"></line>
+  <line x1="329" y1="198" x2="351" y2="198" stroke="#163d26" stroke-width="0.6"></line>
+
+  
+  <line x1="314" y1="218" x2="296" y2="152" stroke="#c09b30" stroke-width="1.2"></line>
+  <ellipse cx="293" cy="146" rx="4.5" ry="8" fill="#c09b30" transform="rotate(-18 293 146)"></ellipse>
+  <ellipse cx="297" cy="158" rx="4" ry="7" fill="#c09b30" transform="rotate(-13 297 158)"></ellipse>
+  <ellipse cx="301" cy="169" rx="3.5" ry="6" fill="#c09b30" transform="rotate(-8  301 169)"></ellipse>
+
+  
+  <line x1="307" y1="220" x2="285" y2="158" stroke="#c09b30" stroke-width="1.1"></line>
+  <ellipse cx="282" cy="152" rx="4.5" ry="8" fill="#c09b30" transform="rotate(-23 282 152)"></ellipse>
+  <ellipse cx="286" cy="164" rx="4" ry="7" fill="#c09b30" transform="rotate(-18 286 164)"></ellipse>
+
+  
+  <line x1="366" y1="218" x2="384" y2="152" stroke="#c09b30" stroke-width="1.2"></line>
+  <ellipse cx="387" cy="146" rx="4.5" ry="8" fill="#c09b30" transform="rotate(18 387 146)"></ellipse>
+  <ellipse cx="383" cy="158" rx="4" ry="7" fill="#c09b30" transform="rotate(13 383 158)"></ellipse>
+  <ellipse cx="379" cy="169" rx="3.5" ry="6" fill="#c09b30" transform="rotate(8  379 169)"></ellipse>
+
+  
+  <line x1="373" y1="220" x2="395" y2="158" stroke="#c09b30" stroke-width="1.1"></line>
+  <ellipse cx="398" cy="152" rx="4.5" ry="8" fill="#c09b30" transform="rotate(23 398 152)"></ellipse>
+  <ellipse cx="394" cy="164" rx="4" ry="7" fill="#c09b30" transform="rotate(18 394 164)"></ellipse>
+
+  
+  <path d="M 354,202 Q 370,190 376,174 Q 364,180 354,202 Z" fill="#2a6644"></path>
+  <path d="M 326,202 Q 310,190 304,174 Q 316,180 326,202 Z" fill="#2a6644"></path>
+
+  
+  <ellipse cx="368" cy="224" rx="8" ry="13" fill="#c09b30" transform="rotate(28 368 224)"></ellipse>
+
+  
+  <path d="M 314,222 Q 302,227 305,236 Q 312,241 318,233 Q 321,224 314,222 Z" fill="#c09b30"></path>
+
+  
+  <path d="M 331,238 Q 340,231 349,238 Q 347,247 340,249 Q 333,247 331,238 Z" fill="#c09b30"></path>
+  <ellipse cx="340" cy="236" rx="9" ry="3.5" fill="#8a6818"></ellipse>
+  
+  <path d="M 340,220 Q 336,227 338,234 Q 340,237 342,234 Q 344,227 340,220 Z" fill="#e8b820"></path>
+  <path d="M 340,223 Q 338,229 339,233 Q 340,235 341,233 Q 342,229 340,223 Z" fill="#fff5b0"></path>
+
+  
+  <circle cx="148" cy="340" r="2.2" fill="#c09b30"></circle>
+  <circle cx="160" cy="340" r="2.2" fill="#c09b30"></circle>
+  <line x1="172" y1="340" x2="508" y2="340" stroke="#c09b30" stroke-width="0.8"></line>
+  <circle cx="520" cy="340" r="2.2" fill="#c09b30"></circle>
+  <circle cx="532" cy="340" r="2.2" fill="#c09b30"></circle>
+
+</svg>
